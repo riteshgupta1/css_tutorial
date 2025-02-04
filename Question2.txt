@@ -1,0 +1,57 @@
+Question: Explain the difference between absolute and relative positions.
+
+Solution: 
+
+the position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+    static
+    relative
+    fixed
+    absolute
+    sticky
+
+positon: relative;
+
+An element with position: relative; is positioned relative to its normal position.
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+Other content will not be adjusted to fit into any gap left by the element.
+
+Example: 
+.box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+
+positon absolute
+
+The element is positioned relative to the nearest positioned ancestor (an ancestor with relative, absolute, or fixed position).
+If no positioned ancestor exists, it positions itself relative to the <html> (document body).
+The element is removed from the normal document flow, so it does not affect surrounding elements.
+
+Example: 
+.container {
+  position: relative; 
+}
+
+.box {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+                                  difference 
+
+      relative                                                      absolute
+
+  Its normal position                                        Nearest positioned ancestor (or <html> if none)
+
+  it still takes up space                                        it removed from normal flow  
+
+  Slight adjustments to layout                                  Floating elements, modals, tooltips
+
+
+

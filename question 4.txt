@@ -1,0 +1,42 @@
+Questin : 
+How are inline and block elements different from each other?
+
+Solution : 1. Block Elements (display: block;)
+
+    Always start on a new line.
+    Take up the full width available (by default).
+    Can contain inline and other block elements.
+    Can have width, height, margins, and padding.
+Block elements, on the other hand, are those that start on a new line and take up the full width available. They are typically used for structural elements, such as:
+- div
+- p (paragraphs)
+- h1-h6 (headings)
+- ul (unordered lists)
+- ol (ordered lists)
+
+        Example.
+    <div>This is a block element</div>
+<p>This is a paragraph</p>
+<h1>Heading 1</h1>
+
+
+Inline Elements (display: inline;)
+
+    Do not start on a new line.
+    Only take up as much width as necessary.
+    Can only contain text or other inline elements.
+    Cannot have width and height properties.
+
+     Inline Elements: Inline elements are those that do not start on a new line and only take up the space needed to display their content. They are typically used for text-level elements, such as:
+- span
+- a (hyperlinks)
+- img (images)
+- input (form inputs)
+- label
+ Example: 
+    <span>This is an inline element</span>
+<a href="#">This is a link</a>
+<strong>Bold text</strong>
+
+
+

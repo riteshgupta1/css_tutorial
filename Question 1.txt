@@ -1,0 +1,64 @@
+Question: What is the use of float property? Which property is the better alternative to it?
+
+Solution : 
+
+The  float property is used to position elements to the left or right within a container, allowing text or other elements to wrap around it.
+The CSS  property specifies how an element should float.
+The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+
+The float property can have one of the following values:
+
+    left - The element floats to the left of its container
+    right - The element floats to the right of its container
+    none - The element does not float (will be displayed just where it occurs in the text). This is default
+    inherit - The element inherits the float value of its parent
+
+
+Example :
+
+
+ <style>
+img {
+  float: right;
+}
+</style>
+
+<p>This text will wrap around the floated image.</p>
+<img src="image.jpg" alt="Example Image">
+
+
+This places the image to the right, and text flows around it.
+
+better alternative ---->>
+
+1.Flexbox 
+(display: flex;)
+Flexbox is best for 1D layouts (row or column alignment) and is more responsive than float.
+
+Exmaple: Centering Two Elements Without Float
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+<div class="container">
+    <div>Left Content</div>
+    <div>Right Content</div>
+</div>
+
+
+2. CSS Grid (
+display: grid;)
+
+Example : Creating a 2-column Layout
+css code --> 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+html code -->
+<div class="container">
+    <div>Column 1</div>
+    <div>Column 2</div>
+</div>
+
